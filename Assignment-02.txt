@@ -1,0 +1,88 @@
+Question 1 - - What is `NPM`?
+Answer:- NPM is managing the packages All the libraries and utilities comes from npm.
+
+Question 2 - What is `Parcel/Webpack`? Why do we need it?
+Answer:- Parcel/Webpack is a type of bundler that is responsible for bundled our project. It configure our files
+         It is responsible for hosting the webpage. It better handled the error. It performs better.
+
+Question 3 - - What is `.parcel-cache`
+Answer:- Parcel/Webpack is a type of file which is create when we load our web page. It stores
+         Intermediate build results as a cache, Which can improve the development workflow by 
+         speeding up subsequent builds and optimizing resource usage.
+
+Question 4 - - What is `npx` ?
+Answer : - It is responsible for executing a package.
+
+Question 5 - What is difference between `dependencies` vs `devDependencies`
+Answer : - Dependencies : - Dependency is something which is needed for the application to run on production.
+                           These packages are required for the application to function properly in production,
+                           so they are usually things like web frameworks (e.g., Express), utility libraries, database drivers, etc.
+           
+           Dev Dependencies : - These are the packages Which is only necessarily duering development and testing phases.
+
+Question 6 - - What is Tree Shaking?
+Answer: - It is a prperties of bundler which is used for removing dead code In modern JavaScript applications, we use module bundlers 
+         (e.g., webpack or Rollup) to automatically remove dead code when bundling multiple JavaScript files into single files.
+         This is important for preparing code that is production ready, for example with clean structures and minimal file size.
+
+Question 7 : - - What is Hot Module Replacement?
+Answer : - Hot Module Replacement (HMR) is a feature commonly found in modern web development frameworks and build tools like webpack,
+           Parcel, and others. It allows developers to update modules in an application without requiring a full page refresh.
+           This means that changes made to the code are reflected in the application's UI in real-time, making the development process faster
+           and more efficient.
+
+Question 8 : - - List down your favourite 5 superpowers of Parcel and describe any 3 of them in your
+own words.
+Answers : - 5 Superpowers of parcel are:-
+            1 - hot module Replacement
+            2 - lightening faster module
+            3 - Tree Shaking
+            4 - Minification 
+            5 - Image optimization
+
+            Hot module Replacement - Hot Module Replacement (HMR) is a feature commonly found in modern web development frameworks and build tools like webpack,
+           Parcel, and others. It allows developers to update modules in an application without requiring a full page refresh.
+           This means that changes made to the code are reflected in the application's UI in real-time, making the development process faster
+           and more efficient.
+
+           Tree shaking - It is a prperties of bundler which is used for removing dead code In modern JavaScript applications, we use module bundlers 
+         (e.g., webpack or Rollup) to automatically remove dead code when bundling multiple JavaScript files into single files.
+         This is important for preparing code that is production ready, for example with clean structures and minimal file size.
+
+Question 9 - - What is `.gitignore`? What should we add and not add into it?
+Answer : - gitignore is a file in which we can add those files which we don't want to push on git.
+           We should don't add those files which can recreate when we execute our project.
+
+Question 10 - - What is the difference between `package.json` and `package-lock.json`
+Answer - Package.json - The package.json file is the core of any node project. It stores critical metadata about a project that
+         is necessary before releasing IT to npm, and it also specifies the functional properties of a project that npm utilizes.
+
+         Package-lock.json - The package-lock.json is a lockfile that holds information on the dependencies or packages installed 
+         for a node.js project, including their exact version numbers.
+
+Question 11 -- Why should I not modify `package-lock.json`?
+Answer : - Modifying package-lock.json is discouraged because it ensures dependency consistency, is automatically managed,
+           aids version control, assists with dependency resolution, and maintains security and stability.
+           It's better to manage dependencies through package.json and use npm or yarn commands for updates.
+
+Question 12 - - What is `node_modules` ? Is it a good idea to push that on git?
+Answer : - node_modules is a folder which contains the dependencies which are useful for our project.
+        When we install any dependencies it can be depend on other packages that packages can dependent on other packages
+        this is called as a transitive dependencies. So all these packages are available in node modules folder.
+        This folder can be regenerated when we execute our project so we no need to require to put on git.
+
+Question 13 - - What is the `dist` folder?
+Answer:- The /dist folder contains the minimized version of the source code. The code present in the /dist folder 
+is actually the code which is used on production web applications. Along with the minified code, the /dist folder 
+also comprises of all the compiled modules that may or may not be used with other systems.
+
+Question 14 - What is `browserlists`
+Answer: - Browserslist can specify which browsers your web application can run in,
+         it provides a configuration for specifying browsers range.
+
+Question 15 - What is ^ - caret and ~ - tilda?
+Answer: - ^ (Caret): Allows installing the latest minor version of a dependency while keeping the major version fixed.
+It's suitable for projects that are tolerant of backward-compatible updates.
+
+~ (Tilde): Allows installing the latest patch version of a dependency while keeping the minor version fixed.
+It's suitable for projects that require bug fixes but can tolerate minor updates.
